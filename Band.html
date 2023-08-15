@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Band</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .nav1 ul{
+            list-style: none;
+            display: flex;
+            background-color: rgb(37, 35, 35);
+        }
+        li{
+            margin: 1%;
+        }
+        li a{
+            color: white;
+            text-decoration: none;
+        }
+        li:hover,a:hover{
+            background-color:white;
+            color: black;
+        }
+        .box{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            overflow: hidden;
+        }
+        .img1{
+            width: 100%;
+        }
+        img.hover-img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            cursor: pointer;
+        }
+        .box:hover img{
+            opacity: 0;
+        }
+        .box:hover img.hover-img{
+            opacity: 1;
+        }
+        .hover-img{
+            width: 100%;
+        }
+        .main{
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+        .main:hover{
+            background-color: blueviolet;
+            color: black;
+            cursor: pointer;
+        }
+        .love{
+            text-align: center;
+            opacity: 70%;
+            cursor: pointer;
+        }
+        .love:hover{
+            text-decoration: underline;
+            background-color: lightgray;
+        }
+        .paragaph{
+            text-align: center;
+            margin-left: 30%;
+            margin-right: 30%;
+            cursor: pointer;
+        }
+        .first{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            background-color: rgb(236, 244, 241);
+            cursor: pointer;
+        }
+        .john{
+            text-align: center;
+        }
+        .john:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .smartest{
+            text-align: center;
+        }
+        .smartest:hover{
+            text-decoration: underline;
+            opacity: 80%;
+        }
+        .paul{
+            text-align: center;
+        }
+        .paul:hover{
+            text-decoration: underline;
+        }
+        .prettiest{
+            text-align: center;
+        }
+        .prettiest:hover{
+            text-decoration: underline;
+            opacity: 80%;
+        }
+        .ringo{
+            text-align: center;
+        }
+        .ringo:hover{
+            text-decoration: underline;
+        }
+        .funniest{
+            text-align: center;
+        }
+        .funniest:hover{
+            text-decoration: underline;
+            opacity: 80%;
+        }
+        .down{
+            border: 2px solid black;
+            height: 30vh;
+            background-color: black;
+        }
+        .icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            margin-top: 75px;
+            cursor: pointer;
+        }
+        a{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="Band">
+        <nav class="nav1">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Band</a></li>
+                <li><a href="#">Tour</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="box">
+            <img src="./img/img_band_ny.jpg" alt="#" class="img1">
+            <img class="hover-img" src="./img/img_band_la.jpg" alt="#">
+        </div>
+        <br>
+        <div class="hearder">
+            <h1 class="main">THE BAND</h1>
+            <br><br>
+            <hr>
+            <br>
+            <h3 class="love"><i>We love music</i></h3>
+            <br>
+            <hr>
+            <br><br>
+            <p class="paragaph">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <br><br>
+        </div>
+        <div class="first">
+            <div class="first-name">
+                <h4 class="john">John</h4>
+                <br>
+                <img src="./img/img_bandmember.jpg" alt="#">
+                <h5 class="smartest">John is the smartest</h5>
+            </div>
+            <div class="second-name">
+                <br>
+                <h4 class="paul">Paul</h4>
+                <br>
+                <img src="./img/img_bandmember.jpg" alt="#">
+                <h5 class="prettiest">Paul is the prettiest</h5>
+            </div>
+            <div class="third-name">
+                <br>
+                <h4 class="ringo">Ringo</h4>
+                <br>
+                <img src="./img/img_bandmember.jpg" alt="#">
+                <h5 class="funniest">Ringo is the funniest</h5>
+            </div>
+        </div>
+        <br>
+        <div class="down">
+            <span class="icon">
+                <i class='bx bxl-facebook-square'></i>
+                <i class='bx bxl-instagram'></i>
+                <i class='bx bxl-pinterest-alt'></i>
+                <i class='bx bxl-discord-alt'></i>
+                <i class='bx bx-phone'></i>
+                <p>|Powered by <a href="https://www.w3schools.com/">W3school.com</a></p>
+            </span>
+        </div>
+    </div>
+</body>
+</html>
